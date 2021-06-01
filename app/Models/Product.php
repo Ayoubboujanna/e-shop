@@ -13,11 +13,12 @@ class Product extends Model
     use HasFactory;
 
 
-    // protected $fillable = [
-    //     'title', 'price', 'id_category', 'description', 'file_path', "created_at", "updated_at"
-    // ];
+    protected $fillable = [
+        'title', 'price', 'id_category', 'description', 'file_path', "created_at", "updated_at"
+    ];
 
-    protected $guarded = [];
+
+    // protected $guarded = [];
 
     public function category()
     {

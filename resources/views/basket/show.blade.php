@@ -74,6 +74,7 @@
 
         </table>
 
+
     </div>
     <div class="form-group-row ">
         <!-- Lien pour vider le panier -->
@@ -136,8 +137,8 @@
                 <p class="font-italic mb-4">Les frais éventuels de livraison seront calculés suivant les informations
                     que vous avez transmises.</p>
                 <ul class="list-unstyled mb-4">
-                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total
-                        </strong><strong>{{ $total }}</strong></li>
+                    {{-- <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total
+                        </strong><strong>{{ $total }}</strong></li> --}}
                     @if (request()->session()->has('coupon'))
                     <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Coupon
                             {{ request()->session()->get('coupon')['code'] }}

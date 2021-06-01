@@ -47,13 +47,16 @@
                 <div class="form-group">
                     <label class="mr-sm-2" for="category">Category:</label>
                     <select name="category" class="custom-select mr-sm-2" id="category">
-                        <option value="{{ $product->id_category}}" selected>{{ $product->id_category}}</option>
-                        <option name="category" value="1">TEE SHIRTS</option>
-                        <option name="category" value="2">SHORTS & PANTS</option>
-                        <option name="category" value="3">HATS</option>
-                        <option name="category" value="4">BUSINESS CASUAL</option>
-                        <option name="category" value="5">SHOES</option>
-                        <option name="category" value="6">BEST SELLERS</option>
+                        {{-- <option value="{{ $product->id_category}}" selected>{{ $product->id_category}}</option>
+                        --}}
+
+
+                        <option value="1">TEE SHIRTS</option>
+                        <option value="2">SHORTS & PANTS</option>
+                        <option value="3">HATS</option>
+                        <option value="4">BUSINESS CASUAL</option>
+                        <option value="5">SHOES</option>
+                        <option value="6">BEST SELLERS</option>
                     </select>
                 </div>
             </div>

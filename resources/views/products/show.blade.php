@@ -2,20 +2,21 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 margin-tb">
+        <div class="col-lg-12 margin-tb my-5">
             <div class="pull-left">
-                <h2>Les produits</h2>
+                <h1>{{ $product->title }}</h1>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('products.index') }}"> Retour</a>
+                <a class="btn btn-primary " href="{{ route('products.index') }}"> Retour</a>
             </div>
         </div>
 
 
         <!--Medias-->
-        <div class="media p-5 " style="background:#FEFEE2;  padding:100px;">
 
-            <img class="mr-3" style="width:150px;height:150px" src="{{ asset('images/imgs/'. $product->file_path ) }}"
+        <div class="media p-10" style="background:#FEFEE2;  padding:100px;">
+            <img class="mr-3" style="width:260px;height:260px" src="{{ asset('images/imgs/'. $product->file_path ) }}"
+
                 alt="First slide">
 
             <div class="media-body">
@@ -29,7 +30,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Price:</strong>
-                        {{ $product->price }}
+                        {{ $product->price }} Dh
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">

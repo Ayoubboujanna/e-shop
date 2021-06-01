@@ -32,38 +32,37 @@ class ProductController extends Controller
     }
 
     public function index_cli(Request $request)
-
     {
 
         $produits = Product::all()->where('id_category', "1");
         return view('products_category', ['produits' => $produits]);
     }
-    public function index_cli1(Request $request)
 
+    public function index_cli1(Request $request)
     {
         $produits = Product::all()->where('id_category', "2");
         return view('products_category', ['produits' => $produits]);
     }
-    public function index_cli2(Request $request)
 
+    public function index_cli2(Request $request)
     {
         $produits = Product::all()->where('id_category', "3");
         return view('products_category', ['produits' => $produits]);
     }
-    public function index_cli3(Request $request)
 
+    public function index_cli3(Request $request)
     {
         $produits = Product::all()->where('id_category', "4");
         return view('products_category', ['produits' => $produits]);
     }
-    public function index_cli4(Request $request)
 
+    public function index_cli4(Request $request)
     {
         $produits = Product::all()->where('id_category', "5");
         return view('products_category', ['produits' => $produits]);
     }
-    public function index_cli5(Request $request)
 
+    public function index_cli5(Request $request)
     {
         $produits = Product::all()->where('id_category', "6");
         return view('products_category', ['produits' => $produits]);

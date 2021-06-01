@@ -87,7 +87,7 @@
 
                                         <!-- On parcourt les produits du panier en session : session('basket') -->
                                         <dd class="text-right h5 b">
-                                            {{ $total - request()->session()->get('coupon')['remise']}}</dd>
+                                            {{ $total }}</dd>
                                     </dl>
                                 </article>
                             </div>
