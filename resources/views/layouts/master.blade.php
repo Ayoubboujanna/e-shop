@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
+    <!-- MDB -->
+    <link href=" {{ asset("assets/css/mdb.min.css") }}" rel="stylesheet" />
 
 
 
@@ -259,6 +261,8 @@
     <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="{{ asset('assets/js/mdb.min.js')}}"></script>
     <script>
         $(document).ready(function(){
         $(".fancybox").fancybox({

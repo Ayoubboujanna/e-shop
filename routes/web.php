@@ -74,3 +74,13 @@ Route::match(['get', 'post'], '/admin/edit-coupon/{id}', [App\Http\Controllers\P
 Route::get('/admin/delete-coupon/{id}', [App\Http\Controllers\PromotionController::class, 'deleteCoupon']);
 Route::post('/admin/update-coupon-status', [App\Http\Controllers\PromotionController::class, 'updateStatus']);
 
+
+
+// For test dashboard page
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
+Route::get('/registered-user', [App\Http\Controllers\UserController::class, 'index']);
+Route::get('/registered-order', [App\Http\Controllers\OrderController::class, 'index']);
+Route::get('/registered-product', [App\Http\Controllers\ProductController::class, 'index']);
+Route::get('/registered-promotion', [App\Http\Controllers\PromotionController::class, 'viewCoupons']);
