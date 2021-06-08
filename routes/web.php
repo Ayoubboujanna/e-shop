@@ -76,7 +76,7 @@ Route::post('/admin/update-coupon-status', [App\Http\Controllers\PromotionContro
 
 
 
-// For test dashboard page
+//Test dashboard page
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });

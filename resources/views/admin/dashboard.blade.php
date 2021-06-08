@@ -250,6 +250,8 @@
 
                 </div>
 
+
+
             </div>
             <!--/.Card-->
 
@@ -1032,10 +1034,10 @@
                 <!--Section: Modals-->
 
                 <!-- Card header -->
-                <div class="card-header">Modals</div>
+                {{-- <div class="card-header">Modals</div> --}}
 
                 <!--Card content-->
-                <div class="card-body">
+                {{-- <div class="card-body">
 
                     <div class="text-center mb-5">
                         <p class="lead">Click buttons below to launch modals demo</p>
@@ -1144,7 +1146,7 @@
                     </div>
                     <!-- /.First row-->
 
-                </div>
+                </div> --}}
 
             </div>
             <!--/.Card-->
