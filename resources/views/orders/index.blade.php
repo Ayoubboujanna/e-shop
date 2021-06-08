@@ -21,6 +21,8 @@
                             <th scope="col">Last Name</th>
                             <th scope="col">Order Amount</th>
                             <th scope="col">Qty.</th>
+                            <th scope="col">N° Tel</th>
+                            <th scope="col">Address</th>
                             <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -35,6 +37,8 @@
                             <td>{{ $order->last_name }}</td>
                             <td>{{ config('settings.currency_symbol') }}{{ $order->grand_total }}</td>
                             <td>{{ $order->item_count  }}</td>
+                            <td>{{ $order->phone_number  }}</td>
+                            <td>{{ $order->address  }}</td>
                             <td><span class="badge badge-success">{{ strtoupper($order->statuts) }}</span></td>
                             <td>
                                 <a href="{{ route('admin.orders.edit', $order->id) }}" class="float-left">
