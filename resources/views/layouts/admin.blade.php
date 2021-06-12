@@ -34,6 +34,9 @@
     <!-- MDB -->
     <link href=" {{ asset("assets/css/mdb.min.css") }}" rel="stylesheet" />
 
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
     <style>
         .sidebar-fixed {
             height: 100vh;
@@ -122,6 +125,8 @@
         @include('includes.adminfooter')
 
     </div>
+
+
 
 
     <!-- Javascript files-->

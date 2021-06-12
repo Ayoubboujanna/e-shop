@@ -77,7 +77,7 @@
                                         </li> --}}
                                         <li> <a href="/"><i class="fa fa-home"></i> Home</a> </li>
 
-                                        @can('manage')
+                                        {{-- @can('manage')
                                         <li> <a href="{{ route('products.index') }} "> Manage Products</a> </li>
                                         @endcan
                                         @can('manage')
@@ -101,7 +101,7 @@
                                                 Manage
                                                 Promotions</a>
                                         </li>
-                                        @endcan
+                                        @endcan --}}
 
 
 
@@ -132,6 +132,9 @@
 
                                             <div class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="navbarDropdown">
+                                                @can('manage')
+                                                <a class="dropdown-item" href="{{ url('/dashboard') }}">Dashboard </a>
+                                                @endcan
 
                                                 <a class="dropdown-item" href="{{ route('checkout.show') }}">Mes
                                                     commandes </a>
@@ -233,7 +236,7 @@
                                 <li><img src="/icon/tw.png" alt="icon" /></li>
                                 <li><img src="/icon/lin (2).png" alt="icon" /></li>
                                 <li><img src="/icon/instagram.png" alt="icon" /></li>
-                                
+
                             </ul>
                         </div>
                     </div>

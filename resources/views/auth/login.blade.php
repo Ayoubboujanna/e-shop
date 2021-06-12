@@ -110,17 +110,14 @@
     <div class="content">
         <div class="container">
             <div class="row justify-content-center">
-                <!-- <div class="col-md-6 order-md-2">
-          <img src="images/undraw_file_sync_ot38.svg" alt="Image" class="img-fluid">
-        </div> -->
+
                 <div class="col-md-6 contents">
                     <div class="row justify-content-center">
                         <div class="col-md-12">
                             <div class="form-block">
                                 <div class="mb-4">
                                     <h3>Sign In to <strong>SHOPCLOTHES</strong></h3>
-                                    {{-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur
-                                        adipisicing.</p> --}}
+
                                 </div>
                                 <form action="{{ route('login') }}" method="post">
                                     @csrf
@@ -184,7 +181,7 @@
     </div>
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

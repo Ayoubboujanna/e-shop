@@ -2,9 +2,12 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Shop\MainController;
+use ArielMejiaDev\LarapexCharts\LarapexChart;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -77,10 +80,12 @@ Route::post('/admin/update-coupon-status', [App\Http\Controllers\PromotionContro
 
 
 //Test dashboard page
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-});
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// });
 Route::get('/registered-user', [App\Http\Controllers\UserController::class, 'index']);
 Route::get('/registered-order', [App\Http\Controllers\OrderController::class, 'index']);
 Route::get('/registered-product', [App\Http\Controllers\ProductController::class, 'index']);
 Route::get('/registered-promotion', [App\Http\Controllers\PromotionController::class, 'viewCoupons']);
+
+Route::get('/dashboard', [App\Http\Controllers\ChartController::class, 'showCharts']);
